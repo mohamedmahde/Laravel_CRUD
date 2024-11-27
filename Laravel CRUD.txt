@@ -1,0 +1,8 @@
+CRUD operation
+
+Create Data
+Reade Data
+Update Data
+Delete Data
+Soft Delete
+Restore Data
