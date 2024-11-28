@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\InsertPostRequest;
 use App\Models\post;
 use Illuminate\Http\Request;
 
@@ -35,8 +36,9 @@ class PostController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(InsertPostRequest $request)
     {
+      
         Post::create([
             'title' => $request->title,
             'body' => $request->body

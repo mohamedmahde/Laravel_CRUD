@@ -8,11 +8,11 @@
     @csrf
     <div class="mb-3 mt-3">
       <label for="email" class="form-label">Title:</label>
-      <input type="teat" class="form-control" value = "{{ $post->title }}" name="title">
+      <input type="teat" class="form-control" value = "{{ $post->title }}" name="title" required>
     </div>
     <div class="mb-3">
       <label for="pwd" class="form-label">body</label>
-      <input type="text" class="form-control" value = "{{ $post->body }}" name="body">
+      <input type="text" class="form-control" value = "{{ $post->body }}" name="body" required>
     </div>
     <div class="form-check mb-3">
       {{-- <label class="form-check-label">
